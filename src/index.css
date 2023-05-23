@@ -1,0 +1,8 @@
+@import url("./variable.css");
+
+:root{
+
+  font-family: var(--fonts);
+  background-color: var(--theme-dark);
+  background-color: var(--theme-light);
+}

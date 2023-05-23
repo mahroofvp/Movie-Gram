@@ -1,0 +1,16 @@
+.home-page-main-div{
+    height: 100vh;
+    width:100% ;
+    
+    overflow: hidden;
+  
+}
+#dark .home-page-main-div {
+    background-color: var(--theme-dark);
+    
+}
+
+#light .home-page-main-div {
+    background-color: var(--theme-light);
+    
+}
