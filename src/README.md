@@ -5,22 +5,34 @@ MovieGram is a movie searching app that allows users to discover information abo
 Table of Contents:
 
 .Features
+
 .Installation
+
 .Usage
+
 .Login
+
 .Dark Mode and Light Mode
+
 .Contributing
+
 .License
 
 
 Features:
 
-.Search for movies: Find detailed information about movies by searching for their titles
+Search for movies:
+
+Find detailed information about movies by searching for their titles
 
 
-.Login: Securely log in to the app using the provided credentials.
+Login: 
 
-.Dark mode and light mode: Customize the app's       appearance by toggling between dark mode and light mode.
+Securely log in to the app using the provided credentials.
+
+Dark mode and light mode:
+
+Customize the app's appearance by toggling between dark mode and light mode.
 
 
 
