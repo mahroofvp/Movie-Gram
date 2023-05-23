@@ -26,11 +26,12 @@ export const ApiProvider = ({children}) => {
          }
         }); 
         setSearchList(response.data.results)
+        
         setFilteredList(response.data.results)
        }
 
         
-       useDebounce(fetchMovieList, 300, [searchInputValue])   
+       useDebounce(fetchMovieList, 300)   
           
        
         

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export const useDebounce = (value, delay, depandency) => {
+export const useDebounce = (value, delay) => {
    
     
  useEffect(() => {
@@ -14,7 +14,7 @@ export const useDebounce = (value, delay, depandency) => {
      clearTimeout(timeout)
 
    }
- }, [...depandency])
+ }, [])
  
    
  
