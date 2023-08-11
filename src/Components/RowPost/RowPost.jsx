@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import "./RowPost.css"
 import { ApiContext } from '../../context/ApiContext'
-const TMDB_IMAGE_URL='https://image.tmdb.org/t/p/w500/'
+import { TMDB_IMAGE_URL } from '../Constants/Constants'
 export const RowPost = () => {
   const {filteredList} = useContext(ApiContext)
   return (
@@ -14,7 +14,7 @@ export const RowPost = () => {
           <img 
           className='poster' 
           style={{objectFit: "contain"}}
-          src={`https://image.tmdb.org/t/p/w500/${data.poster_path}` } 
+          src={`${TMDB_IMAGE_URL}${data.poster_path}` } 
           
           />
           

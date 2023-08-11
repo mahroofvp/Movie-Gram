@@ -1,5 +1,6 @@
 import {  createContext, useEffect, useState } from "react";
 import {TMDB_SEARCH_API} from '../Components/Constants/Constants'
+import {TMDB_MOVIE_LIST_API_} from '../Components/Constants/Constants'
 import axios from "axios";
 import { useDebounce } from "../customHooks/useDebounce";
 export const ApiContext = createContext()
@@ -20,7 +21,7 @@ export const ApiProvider = ({children}) => {
 
 
     const fetchMovieList = async ()=>{
-        const response =await axios(TMDB_SEARCH_API, {
+        const response =await axios(TMDB_MOVIE_LIST_API_, {
          params: {
            query:"movie",
          }

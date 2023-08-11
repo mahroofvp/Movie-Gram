@@ -2,7 +2,7 @@ import React, { useContext, useEffect} from 'react'
 
 
 import "./Banner.css"
-import pandavdo from "../../assets/video/panda.mp4"
+import pandavdeo from "../../assets/video/panda.mp4"
 import crossIcon from "../../assets/icons/cross-icon.png"
 import { ApiContext } from '../../context/ApiContext'
 export const Banner = () => {
@@ -11,7 +11,7 @@ export const Banner = () => {
   
   return (
     <div className='banner'>
-      <video src={pandavdo} autoPlay loop muted/>
+      <video src={pandavdeo} autoPlay  loop muted/>
         <div className='content'>
         <input value={searchInputValue} type="text"onChange={handleChange}  placeholder='Search here...' />
         {searchInputValue&&<button onClick={clearSearch} >
