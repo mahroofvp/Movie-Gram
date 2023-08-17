@@ -17,7 +17,7 @@ Table of Contents:
 
 .Contributing
 
-.License
+
 
 
 Features:
@@ -53,7 +53,7 @@ Install the dependencies: npm install
 Start the app: npm start
 
 
-Open a web browser and visit http://127.0.0.1:5173/to access MovieGram.
+Open a web browser and access MovieGram.
 
 Usage:
 
@@ -73,9 +73,5 @@ MovieGram offers a visually pleasing experience with the option to switch betwee
 Contributing:
 Contributions to MovieGram are welcome! If you find any issues or have suggestions for improvements, please let me know.
 
-
-
-License:
-The content of this project is licensed under the MIT License. Feel free to use and modify the code according to your needs.
 
 We hope you enjoy using MovieGram! If you have any questions or need assistance, please feel free to reach out. Happy movie searching!
