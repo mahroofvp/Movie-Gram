@@ -25,10 +25,11 @@
 .poster{
     display: flex;
     flex-direction:column;
-
     max-height: 220px; 
     max-width: 160px;
-   
     margin-right: 10px;
-
+    cursor: pointer;
+}
+.poster:hover{
+    transform: scale(1.3);
 }

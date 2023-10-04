@@ -1,11 +1,14 @@
 import React, { useContext } from 'react'
 import "./RowPost.css"
 import { ApiContext } from '../../context/ApiContext'
-import { TMDB_IMAGE_URL } from '../Constants/Constants'
-export const RowPost = () => {
+import { TMDB_IMAGE_URL} from '../Constants/Constants'
+export const RowPost = ({handleClick}) => {
   const {filteredList} = useContext(ApiContext)
   return (
     <div className='row'>
+      <div className=''>
+
+      </div>
         {filteredList.map((data)=>(
           
           
@@ -15,6 +18,7 @@ export const RowPost = () => {
           className='poster' 
           style={{objectFit: "contain"}}
           src={`${TMDB_IMAGE_URL}${data.poster_path}` } 
+          onClick={()=>handleClick(data.id)}
           
           />
           

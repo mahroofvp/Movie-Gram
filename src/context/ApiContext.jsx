@@ -5,6 +5,7 @@ import axios from "axios";
 import { useDebounce } from "../customHooks/useDebounce";
 export const ApiContext = createContext()
 
+
 export const ApiProvider = ({children}) => {
 
     const [searchInputValue, setSearchInputValue] = useState("")
@@ -17,32 +18,48 @@ export const ApiProvider = ({children}) => {
       return data.title.toLowerCase().includes(e.target.value.toLowerCase())
     })
     setFilteredList(newFilteredItems)
-  } 
+  }
+  
+  const data = async ()=> {
+    try{
 
-
-    const fetchMovieList = async ()=>{
-        const response =await axios(TMDB_MOVIE_LIST_API_, {
-         params: {
-           query:"movie",
-         }
-        }); 
-        setSearchList(response.data.results)
-        
-        setFilteredList(response.data.results)
-       }
-
-        
-       useDebounce(fetchMovieList, 300)   
-          
+      const res = await axios.get(TMDB_MOVIE_LIST_API_,{
        
-        
+      })
+      console.log(res.data);
+    }catch(err){
+      console.log(err);
+
+    }
+    
+  }
+  useEffect(()=>{
+    data()
+  },[])
+  
 
 
-        const clearSearch =()=>{
-          setSearchInputValue("")
-          setFilteredList(searchList)
+  const fetchMovieList = async ()=>{
+    const response =await axios (TMDB_SEARCH_API,{
+      params:{
+        query:"Movie",
+      }
+    }
+    
+    ); 
+    setSearchList(response.data.results)
+    console.log("hi"+response.data.total_results);
+    
+    setFilteredList(response.data.results)
+  }
+  
+  useDebounce(fetchMovieList, 200)   
+  
+       const clearSearch =()=>{
+         setSearchInputValue("")
+         setFilteredList(searchList)
          
-         }
+        }
  return(
  <ApiContext.Provider value={{searchInputValue,searchList,filteredList,handleChange,clearSearch}}>{children}</ApiContext.Provider>
  )

@@ -8,9 +8,12 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import {  ProtectedRouteLogin } from './Routes/ProtectedRouteLogin'
 import { ProtectedRouteHome } from './Routes/ProtectedRouteHome'
 
+
 const App = ()=> {
   const {theme} = useContext(ThemeContext)
+ 
   const location = useLocation()
+ 
 
   return (
     <div className='App'id={theme}>
