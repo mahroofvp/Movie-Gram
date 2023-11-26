@@ -1,4 +1,5 @@
-MovieGram
+# Movie-Gram
+
 
 MovieGram is a movie searching app that allows users to discover information about movies, It provides a convenient and user-friendly interface for movie enthusiasts to explore their favorite films. Additionally, MovieGram offers a login feature and the option to switch between dark mode and light mode for a personalized viewing experience.
 
@@ -16,7 +17,7 @@ Table of Contents:
 
 .Contributing
 
-.License
+
 
 
 Features:
@@ -52,7 +53,7 @@ Install the dependencies: npm install
 Start the app: npm start
 
 
-Open a web browser and visit http://127.0.0.1:5173/to access MovieGram.
+Open a web browser and access MovieGram.
 
 Usage:
 
@@ -73,14 +74,4 @@ Contributing:
 Contributions to MovieGram are welcome! If you find any issues or have suggestions for improvements, please let me know.
 
 
-
-License:
-The content of this project is licensed under the MIT License. Feel free to use and modify the code according to your needs.
-
 We hope you enjoy using MovieGram! If you have any questions or need assistance, please feel free to reach out. Happy movie searching!
-
-
-
-
-
-
