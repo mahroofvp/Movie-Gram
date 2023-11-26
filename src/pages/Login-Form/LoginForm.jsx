@@ -39,6 +39,8 @@ const handleSubmit = (e) => {
 }
 
 
+
+
 const isFormValid = () => {
   if (
     formValues.username.trim() === "test" &&
@@ -71,7 +73,6 @@ const validate = (values) => {
 
 
 
-
   return (
     
       
@@ -84,10 +85,9 @@ const validate = (values) => {
       </div>
 
  <section className='title-section'>
-  <div className="login-content">
-    
-
-    
+  <div className="loginContent">
+    <h1>UserName: test</h1>
+    <h1>Password: test</h1>
   </div>
 </section>
 

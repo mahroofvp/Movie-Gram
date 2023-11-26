@@ -6,8 +6,8 @@ export const RowPost = ({handleClick}) => {
   const {filteredList} = useContext(ApiContext)
   return (
     <div className='row'>
-      <div className=''>
-
+      <div className='pagination-div'>
+        
       </div>
         {filteredList.map((data)=>(
           
