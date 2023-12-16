@@ -43,8 +43,8 @@ const handleSubmit = (e) => {
 
 const isFormValid = () => {
   if (
-    formValues.username.trim() === "test" &&
-    formValues.password.trim() === "test"
+    formValues.username.trim() === "Test" &&
+    formValues.password.trim() === "1234"
   ) {
     return true;
   }
@@ -86,8 +86,8 @@ const validate = (values) => {
 
  <section className='title-section'>
   <div className="loginContent">
-    <h1>UserName: test</h1>
-    <h1>Password: test</h1>
+    <h1>UserName: Test</h1>
+    <h1>Password: 1234</h1>
   </div>
 </section>
 
