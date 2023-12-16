@@ -1,5 +1,5 @@
 # Movie-Gram
-[https://movie-gram-jppg.vercel.app/](url)
+[Movi-Gram Live Link](https://movie-gram-jppg.vercel.app/)
 
 
 MovieGram is a movie searching app that allows users to discover information about movies, It provides a convenient and user-friendly interface for movie enthusiasts to explore their favorite films. Additionally, MovieGram offers a login feature and the option to switch between dark mode and light mode for a personalized viewing experience.
