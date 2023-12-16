@@ -9,8 +9,9 @@ import { createContext, useState } from "react";
     
 
     const idHandleOnClick = (id)=> {
+      console.log(typeof(id));
      setNewId(id)
-     if(typeof(id) === ''){
+     if(typeof(id) === object){
        setShowVideo(true)
      }
    }
