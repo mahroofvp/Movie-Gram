@@ -6,6 +6,7 @@ import { ApiProvider } from './context/ApiContext.jsx'
 import { ThemeContextProvider } from './context/ThemeContext.jsx'
 import {BrowserRouter} from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext.jsx'
+import { BannerIdProvider } from './context/BannerIdContext.jsx'
  
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,7 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <ThemeContextProvider>
     <ApiProvider> 
+      <BannerIdProvider>
     <App />
+      </BannerIdProvider>
     </ApiProvider>
     </ThemeContextProvider>
   </BrowserRouter>

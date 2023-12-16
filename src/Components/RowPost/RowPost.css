@@ -1,35 +1,99 @@
 
-.row{
+.row-post-main{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    color: #fff;
-    margin: 0;
-    height: 400px;
-    overflow: auto;
-    margin-top: 10px;
+    height: 75vh;
+    width: 100%;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+    position:relative;
+   
+    
+}
+.wrapper-div{
+    height: 70vh;
+    width: 70%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+}
+
+.wrapper-div::-webkit-scrollbar {
+    display: none;
 }
 
 .posters{
-    
-    padding: 5px;
-    /* overflow-x: scroll; */
-    /* overflow-y: hidden; */
-    
+    height: 30%;
+    width: 19%;
+    margin: 5px;
+   
+    /* background-color: rgb(46, 236, 71); */
 }
 .posters::-webkit-scrollbar{
-    display: none;
-    
+    display: none; 
 }
-.poster{
-    display: flex;
-    flex-direction:column;
-    max-height: 220px; 
-    max-width: 160px;
-    margin-right: 10px;
+.poster{ 
+    max-height: 100%; 
+    max-width: 100%;
     cursor: pointer;
+    background-color: yellow;
+    overflow-y : hidden; 
 }
 .poster:hover{
-    transform: scale(1.3);
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 250px) {
+    .posters{
+        height: 20%;
+        width:40%;
+        margin: 2px;
+    }
+}
+@media only screen and (min-width: 250px) {
+    .posters{
+        height: 20%;
+        width:27%;
+        margin: 2px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    .posters{
+        height: 19%;
+        width: 17%;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 778px) {
+    .posters{
+        height: 23%;
+        width: 17%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .posters{
+        height: 24%;
+        width: 17%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .posters{
+        height: 20%;
+        width: 14%;
+    }
 }

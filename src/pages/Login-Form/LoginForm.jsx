@@ -94,22 +94,27 @@ const validate = (values) => {
 <form onSubmit={handleSubmit}>
 
     <div className='form-container'>
-      <div className='alert-div'>
+     
+     <div className='alert-div'>
 
-     <p>{formErrors.username}</p>
-      </div>
-     <div className='userName-div'>
-    <input type="name" name='username' placeholder='UserName' value={formValues.username} onChange={handleChange} />
-    </div>
-    <div className='alert-div'>
-      <p>{formErrors.password}</p>
-    </div>
-    <div className='password-div'>
-    <input type='password' name='password' placeholder='password' value={formValues.password} onChange={handleChange} />
-    </div>
+<p>{formErrors.username}</p>
+ </div>
+<div className='userName-div'>
+<input type="name" name='username' placeholder='UserName' value={formValues.username} onChange={handleChange} />
+</div>
+<div className='alert-div'>
+ <p>{formErrors.password}</p>
+</div>
+<div className='password-div'>
+<input type='password' name='password' placeholder='password' value={formValues.password} onChange={handleChange} />
+</div>
 
-    <div className='btn-div'>
-              <button  >Submit</button>                                                                                                    
+<div className='btn-div'>
+         <button  >Submit</button> 
+      </div>                                                                                                   
+    
+    <div className='frgot-paswrd-div'>
+    <span className='frgot-paswrd-txt'>Forgot Password?</span>
     </div>
   
     </div>

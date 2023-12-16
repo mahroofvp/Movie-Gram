@@ -3,56 +3,93 @@
 }
 
 .banner{
-    background-image: url(../../assets/bgimg.jpg);
-    background-repeat: no-repeat;
-    background-position: 5%;
-    height: 368px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
-}
-.banner video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute
-    
-}
-.youtube{
-    position: absolute;
    
 }
+
+
+.youtube-container {
+    min-width: 100%;
+    min-height: 25%;
+    padding-bottom: 56.25%; 
+    visibility: 100%;
+   
+   
+  }
+  
+  
+  .youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .youtube-div{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+  }
+  .close-btn-div {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: end;
+    align-items: start;
+    position:absolute;
+    margin-top: 57%;
+    
+  }
+ 
+  .close-btn {
+    height: 30px;
+    width: 60px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    margin-right: 5px;
+    z-index: 22;
+    
+  }
+
+
+  .content{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 70%;
+    position: relative;
+}
+
 .content input{
-    max-width: 190px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 65px;
     border: none;
     outline: none;
     color: black;
     padding: 9px;
+    padding-left: 30px;
     font-size: 22px;
     background-color: (251, 249, 249);
-    opacity: 70%;
+    /* opacity: 70%; */
     z-index: 2;
     padding-right: 40px;
-    
-    
-    
+   background-color: white;
 }
-.content{
-    display: flex;
-    align-items: center;
-    padding-top: 140px;
-    height: 40px;
-    max-width: 239px;
-    padding-left: 15px;
-    position: relative;
-}
+
 
 .content button {
     border: none;
-   
     background-color: transparent;
-   
     right: 21px;
     margin-bottom: 8px;
     opacity: 70%;
@@ -66,10 +103,6 @@
 .content button:hover {
     opacity: 1;
 }
-
-
-
-
 
 .title{
     font-size: 3rem;

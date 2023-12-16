@@ -12,7 +12,7 @@ import { ProtectedRouteHome } from './Routes/ProtectedRouteHome'
 const App = ()=> {
   const {theme} = useContext(ThemeContext)
  
-  const location = useLocation()
+  
  
 
   return (
