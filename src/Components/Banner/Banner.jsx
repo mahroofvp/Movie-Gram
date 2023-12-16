@@ -46,10 +46,10 @@ export const Banner = () => {
       {newId && showVideo && (
 
       <div className='youtube-container'>
-       <div className='youtub-div'>
+   
 
         <YouTube className='youtube' opts={opts} videoId={newId.key} />
-        </div>
+     
         <div className='close-btn-div'>
         <button className='close-btn' onClick={closeVideo}>close</button>
         </div>

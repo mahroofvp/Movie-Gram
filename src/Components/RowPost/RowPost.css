@@ -31,7 +31,6 @@
     width: 19%;
     margin: 5px;
    
-    /* background-color: rgb(46, 236, 71); */
 }
 .posters::-webkit-scrollbar{
     display: none; 
@@ -40,7 +39,6 @@
     max-height: 100%; 
     max-width: 100%;
     cursor: pointer;
-    background-color: yellow;
     overflow-y : hidden; 
 }
 .poster:hover{

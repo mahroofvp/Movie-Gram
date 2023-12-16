@@ -56,3 +56,32 @@
     height: 28px;
     border-radius: 4px;
 }
+
+@media only screen and (max-width: 318px) {
+    .avatar{
+        width: 26px ;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+    .navbar>h2{
+        margin-left: 42px;
+        margin-top: 6px;
+        opacity: 80%;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+   
+   .logout-btn{
+    margin-right: 40px;
+    border: none;
+    cursor: pointer;
+    height: 22px;
+    font-size:8px;
+    font-weight: 600;
+    width: 37px;
+    border-radius: 4px;
+   }
+}
