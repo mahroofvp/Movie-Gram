@@ -15,14 +15,14 @@ const [formValues, setFormValues] = useState({username:"", password:""})
 const [formErrors, setFormErrors] = useState({})
 const [isSubmit, setIsSubmit] = useState(false)
 const navigate = useNavigate()
+
 const {login} = useContext(AuthContext)
 
-const handleChange = (e) => {
 
+
+const handleChange = (e) => {
   const {name, value} = e.target;
   setFormValues({...formValues, [name]:value})
-  
-  
 }
 
 const handleSubmit = (e) => {
@@ -30,12 +30,15 @@ const handleSubmit = (e) => {
   e.preventDefault();
   setFormErrors(validate(formValues))
   setIsSubmit(true)
+
   if(isFormValid()){
     login()
-   
     navigate('/home')
-    
+  }else{
+    alert(`UserName= Test
+Password= 1234`)
   }
+
 }
 
 
@@ -51,11 +54,15 @@ const isFormValid = () => {
   return false;
 };
 
+
 useEffect(()=>{
 if(Object.keys(formErrors).length === 0 && isSubmit){
 
 }
 },[formErrors])
+
+
+
 
 const validate = (values) => {
   const errors = {};
@@ -67,10 +74,12 @@ const validate = (values) => {
   }else if (values.password.length < 4) {
     errors.password = "Password must be more than 3 characters"
   }
+  else if (isFormValid() !== "true") {
+    errors.username = "Username or Password is incorrect"
+  }
   return errors
 
 }
-
 
 
   return (
@@ -84,12 +93,7 @@ const validate = (values) => {
       </div>
       </div>
 
- <section className='title-section'>
-  <div className="loginContent">
-    <h1>UserName: Test</h1>
-    <h1>Password: 1234</h1>
-  </div>
-</section>
+
 
 <form onSubmit={handleSubmit}>
 
@@ -112,11 +116,6 @@ const validate = (values) => {
 <div className='btn-div'>
          <button  >Submit</button> 
       </div>                                                                                                   
-    
-    <div className='frgot-paswrd-div'>
-    <span className='frgot-paswrd-txt'>Forgot Password?</span>
-    </div>
-  
     </div>
 </form>
     </div>

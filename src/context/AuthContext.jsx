@@ -10,7 +10,6 @@ export const AuthProvider = ({children})=>{
     const login = () => {
         const token = uuidv4();
         localStorage.setItem("auth_token", token)
-        
         setAuth(true)
     }
     
