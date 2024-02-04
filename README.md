@@ -64,8 +64,8 @@ Login:
 
 To access certain features of MovieGram you need to log in. Use the following credentials to log in:
 
-Username: test
-Password: test
+Username: Test
+Password: 1234
 
 
 Dark Mode and Light Mode:
