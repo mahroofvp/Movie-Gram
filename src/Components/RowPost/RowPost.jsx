@@ -22,7 +22,7 @@ export const RowPost = ({handleClick}) => {
           <img 
           className='poster' 
          
-          style={{objectFit: "contain"}}
+          
           src={`${TMDB_IMAGE_URL}${data.poster_path}`} 
           alt={''}
           onClick={()=>handleClick(data.id)}

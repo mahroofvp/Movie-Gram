@@ -10,7 +10,7 @@ export const Banner = () => {
  
        const {newId, closeVideo} =useContext(BannerIdContext)
  
-  const opts = {
+  const options = {
     
     height: "360",
     width:"640",
@@ -48,7 +48,7 @@ export const Banner = () => {
       <div className='youtube-container'>
    
 
-        <YouTube className='youtube' opts={opts} videoId={newId.key} />
+        <YouTube className='youtube' opts={options} videoId={newId.key} />
      
         <div className='close-btn-div'>
         <button className='close-btn' onClick={closeVideo}>close</button>

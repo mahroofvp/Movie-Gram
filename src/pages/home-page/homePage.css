@@ -1,11 +1,15 @@
 .home-page-main-div{
-    height: 100vh;
+    min-height: 100vh;
     width:100% ;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background-image: url('../../assets/wallpaper.jpg');
     object-fit: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     position: absolute;
+}
+.home-page-main-div::-webkit-scrollbar{
+    display: none;
 }
   
 
